@@ -367,3 +367,7 @@ void tarefa_13(void)
 		SemaforoLibera(&SemaforoVazio);
 	}
 }
+
+// No modo cooperativo, a própria tarefa decide quando liberar o processador, o que torna o sistema mais simples, porém sujeito a 
+//atrasos se uma tarefa não cooperar. No modo preemptivo, o sistema pode interromper uma tarefa a qualquer momento para executar
+//outra, o que aumenta a responsividade, mas exige mecanismos de sincronização para evitar conflitos no acesso a recursos.
